@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <style>
+      body {
+        width: 300px;
+        font-family: Arial, sans-serif;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <h1>密码生成器</h1>
+    <label>
+      长度:
+      <input type="range" min="9" max="32" value="9" id="length-slider" />
+      <span id="length-value">9</span>
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" id="include-uppercase" checked />
+      大写
+    </label>
+    <br />
+
+    <label>
+      <input type="checkbox" id="include-lowercase" checked />
+      小写
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" id="include-nums" checked />
+      数字
+    </label>
+    <br />
+    <label>
+      <input type="checkbox" id="include-special-chars" checked />
+      特殊字符
+    </label>
+    <br />
+
+    <button id="generate-password">生成密码</button>
+    <input type="text" id="password" readonly />
+    <button id="copy-password">复制到剪贴板</button>
+  </body>
+</html>

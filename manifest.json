@@ -1,0 +1,13 @@
+{
+    "manifest_version": 2,
+    "name": "密码生成器",
+    "version": "1.0",
+    "description": "一个非常简易的离线密码生成器，它不会访问您的任何区域的数据，请放心使用。后期会再进行美化！",
+    "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html",
+      "default_title": "Password Generator"
+    },
+    "permissions": ["clipboardWrite"]
+  }
+
